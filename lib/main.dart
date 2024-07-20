@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: SizedBox(
                         child: CardWidget(
                           child: Padding(
-                            padding: const EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.all(20.0),
                             child: Image.network(
                               'https://pngimg.com/d/mazda_PNG86.png'
                             ),
@@ -146,6 +146,211 @@ class _MyHomePageState extends State<MyHomePage> {
                       )
                     ),
                   ],
+                ),
+                const SizedBox(height: 10,),
+                const Text(
+                  "Attivita Recenti",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold
+                  )
+                ),
+                const SizedBox(height: 10,),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.4,
+                  width: MediaQuery.of(context).size.width * 0.95,
+                  child: Expanded(
+                    child: CardWidget(
+                      shadow: true,
+                      borderRadius: 30.0,
+                      child: const Expanded(
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(35, 35, 35, 10),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 1,
+                                    child: FaIcon(FontAwesomeIcons.gasPump)
+                                  ),
+                                  Expanded(
+                                    flex: 5,
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                              "Benzina",
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.bold
+                                              )
+                                          ),
+                                          Text(
+                                              "Carburante 10 lt + 127 km",
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                              )
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 1,
+                                    child: Text(
+                                      "25 €",
+                                      style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold
+                                      )
+                                    )
+                                  )
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(35, 10, 35, 10),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 1,
+                                    child: FaIcon(FontAwesomeIcons.gasPump)
+                                  ),
+                                  Expanded(
+                                    flex: 5,
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                              "Benzina",
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.bold
+                                              )
+                                          ),
+                                          Text(
+                                              "Carburante 10 lt + 127 km",
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                              )
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 1,
+                                    child: Text(
+                                      "25 €",
+                                      style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold
+                                      )
+                                    )
+                                  )
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(35, 10, 35, 10),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                      flex: 1,
+                                      child: FaIcon(FontAwesomeIcons.gasPump)
+                                  ),
+                                  Expanded(
+                                    flex: 5,
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                              "Benzina",
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.bold
+                                              )
+                                          ),
+                                          Text(
+                                              "Carburante 10 lt + 127 km",
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                              )
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                      flex: 1,
+                                      child: Text(
+                                          "25 €",
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.bold
+                                          )
+                                      )
+                                  )
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(35, 10, 35, 10),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                      flex: 1,
+                                      child: FaIcon(FontAwesomeIcons.gasPump)
+                                  ),
+                                  Expanded(
+                                    flex: 5,
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                              "Benzina",
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.bold
+                                              )
+                                          ),
+                                          Text(
+                                              "Carburante 10 lt + 127 km",
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                              )
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                      flex: 1,
+                                      child: Text(
+                                          "25 €",
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.bold
+                                          )
+                                      )
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                 )
               ],
             ),
