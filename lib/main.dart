@@ -46,111 +46,105 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: const EdgeInsets.all(10.0),
             child: Column(
               children: <Widget>[
-                Row(
-                  children: [
-                    Expanded(
-                      child: CardWidget(
-                        child: Padding(
-                          padding: EdgeInsets.all(10.0),
-                          child: Align(
-                            alignment: Alignment.center,
-                            child: Text(
-                              "Rose",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold
-                              ),
-                            ),
-                          ),
-                        ),
-                      )
-                    ),
-                  ],
+                SizedBox(
+                  child:  CardWidget(
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        "Rose",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18
+                        )
+                      ),
+                    )
+                  ),
+                  height: MediaQuery.of(context).size.height*0.05,
                 ),
-                const SizedBox(height: 10,),
+                const SizedBox(height: 10.0,),
                 Row(
                   children: [
                     Expanded(
                       flex: 1,
-                      child: CardWidget(
-                        child: Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: Image.network(
-                            'https://pngimg.com/d/mazda_PNG86.png'
-                          ),
+                      child: SizedBox(
+                        child: CardWidget(
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Image.network(
+                              'https://pngimg.com/d/mazda_PNG86.png'
+                            ),
+                          )
                         ),
-                      )
+                        height: MediaQuery.of(context).size.height*0.17,
+                      ),
                     ),
-                    const SizedBox(width: 10,),
-                    const Expanded(
+                    const SizedBox(width: 10.0,),
+                    Expanded(
                       flex: 1,
                       child: Column(
                         children: [
-                          CardWidget(
-                            child: Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                    flex: 1,
-                                    child: FaIcon(FontAwesomeIcons.ruler)
-                                  ),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Text(
-                                      "10.000 km",
-                                      textAlign: TextAlign.end,
-                                    )
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 10,),
-                          CardWidget(
-                            child: Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                    flex: 1,
-                                    child: FaIcon(FontAwesomeIcons.gasPump)
-                                  ),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Text(
-                                      "323 lt",
-                                      textAlign: TextAlign.end,
-                                    )
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 10,),
-                          CardWidget(
-                            child: Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                      flex: 1,
-                                      child: FaIcon(FontAwesomeIcons.moneyBill)
-                                  ),
-                                  Expanded(
-                                      flex: 3,
-                                      child: Text(
-                                        "27.248 €",
-                                        textAlign: TextAlign.end,
+                          SizedBox(
+                            child: CardWidget(
+                              child: Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Row(
+                                  children: [
+                                    FaIcon(FontAwesomeIcons.ruler),
+                                    Expanded(
+                                      child: Align(
+                                        alignment: Alignment.centerRight,
+                                        child: Text("10.000 km")
                                       )
-                                  )
-                                ],
-                              ),
+                                    )
+                                  ],
+                                ),
+                              )
                             ),
+                            height: MediaQuery.of(context).size.height*0.05,
+                          ),
+                          SizedBox(height: MediaQuery.of(context).size.height*0.01,),
+                          SizedBox(
+                            child: CardWidget(
+                              child: Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Row(
+                                  children: [
+                                    FaIcon(FontAwesomeIcons.gasPump),
+                                    Expanded(
+                                      child: Align(
+                                        alignment: Alignment.centerRight,
+                                        child: Text("345 lt")
+                                      )
+                                    )
+                                  ],
+                                ),
+                              )
+                            ),
+                            height: MediaQuery.of(context).size.height*0.05,
+                          ),
+                          SizedBox(height: MediaQuery.of(context).size.height*0.01,),
+                          SizedBox(
+                            child: CardWidget(
+                              child: Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Row(
+                                  children: [
+                                    FaIcon(FontAwesomeIcons.moneyBill),
+                                    Expanded(
+                                      child: Align(
+                                        alignment: Alignment.centerRight,
+                                        child: Text("17.983 €")
+                                      )
+                                    )
+                                  ],
+                                ),
+                              )
+                            ),
+                            height: MediaQuery.of(context).size.height*0.05,
                           ),
                         ],
                       )
-                    )
+                    ),
                   ],
                 )
               ],
